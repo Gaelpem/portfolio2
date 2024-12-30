@@ -1,6 +1,6 @@
 <section  class="portfolio-section">
     <div class="contact-container">  
-     <h1 id="contact-menu">[Conta-ct]<span class="number">(03)</span></h1> 
+     <h2 id="contact-menu">[Conta-ct]<span class="number">(03)</span></h2> 
       <div class="contact-mini">
     <p>Pour toutes questions, avis, opportunités de stage ou d’alternance, n’hésitez pas à me contacter. Je suis ouverte aux échanges et prête à discuter avec vous.</p>
       <form action="" method="">

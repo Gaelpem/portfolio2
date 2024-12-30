@@ -56,17 +56,19 @@
 <section class="portfolio-section">
 <h1 id="projet-menu">[Proje-ts]<span class="number">(01)</span></h1>
 <div class="projet-container">
-<h2 class="portfolio">Portfolio-Photos</h2>
+
    
     <article class="photos">
-        <img src="" alt="">
+    <h2 class="portfolio">Portfolio-Photos</h2>
+        <div class="projet-photo"></div>
     </article>
 
-    <h2 class="portfolio">Biographie</h2>
+    
     <article class="biographie">
+    <h2 class="portfolio">Biographie</h2>
+    <div class="projet-galle"></div>
     </article>
-
-
+    
 </div>
 </section>
 
@@ -122,6 +124,9 @@
 </div>
 </section>
 
+
+</main>
+
  <!--footer-->
 
 <footer>
@@ -152,7 +157,7 @@
         </div>
     </div>
 </footer>
-</main>
+
 
 </body>
 </html>

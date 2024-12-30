@@ -4,6 +4,7 @@
     --maxWidth: 1450px; 
     --border-radius: 15px;
     --fontSize:8rem; 
+    --color:#0f0f0f6f;
 }
 
 *{
@@ -13,7 +14,6 @@
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth ;
 }
-
 
 body{
 height:100%; 
@@ -47,7 +47,6 @@ header{
 .navbar li {
    list-style: none;
 }
-
 
 
 .navbar a{
@@ -91,18 +90,19 @@ left: 43rem;
    }
 
 main{
-margin: 1.5rem 2rem;
+
 display: flex;
 flex-direction: column;
 background-color: #00000049;
-border-radius:18px;
+border-radius:22px;
 padding: 2rem;
 margin-top: 4rem;
+
 }
 
 section h1{
     font-size: var(--fontSize);
-    color: #0f0f0f6f;
+    color: var(--color);
     z-index: 2;
 }
 section h1::after{
@@ -119,7 +119,7 @@ section h1:before{
     position: absolute;
     background-color: #7474746f; 
     width: 100%;
-    height: 3px;
+    height: 1px;
     top: 8rem;
     left: 0.5rem;
 
@@ -152,7 +152,7 @@ section h1:before{
     color: #ffffff26;
     z-index: 1;
     border: none;
-}
+} 
 
 .paragraphe1{
     margin-top: 28rem;
@@ -239,6 +239,13 @@ border-radius: 10px;
     background-color: var(--bgc-principal);
     border-radius: var(--border-radius);
 
+}
+
+article .portfolio{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color);
+    font-weight: 400;
 }
 
 
@@ -374,6 +381,16 @@ border-radius: 10px;
     font-size:  var(--fontSize);
 }
 
+.contact-container h2::after{
+    content:""; 
+    position: absolute;
+    background-color: white;
+    width:1400px;
+    height:1px;
+    top: 8rem;
+    left: 1rem;
+}
+
 
 .contact-mini{
     position: absolute;
@@ -490,7 +507,7 @@ form input:focus{
 .menu-block .links-block{
     position: absolute;
     right: 45rem;
-    top: 10rem;
+    top: 14.6rem;
 }
 
 .links-block li{

@@ -1,7 +1,8 @@
 
 :root{
-    --bgc-principal:rgba(0, 0, 0, 0.548); 
+    --bgc-principal:rgba(0, 0, 0, 0.688); 
     --maxWidth: 1450px; 
+    --border-radius: 15px;
 }
 
 *{
@@ -15,8 +16,6 @@
 
 body{
 height:100%; 
-border: 1px solid black;
-
 }
 
 section{
@@ -27,6 +26,10 @@ header{
     position: relative;
    /* background-color: rgba(223, 78, 78, 0.873);*/
     padding: 0 3rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar{
@@ -36,8 +39,8 @@ header{
     align-items: center;
    /* background-color: rgba(255, 255, 0, 0.708);*/
     max-width: 1450px;
-    margin: 0 auto; 
     height: 60px;
+position: fixed;
 }
 
 .navbar li {
@@ -98,6 +101,17 @@ section{
 section h1{
     font-size: 5rem;
 }
+h1::after{
+    content:""; 
+    position: absolute;  
+    background-color: black;
+    width: 100%;
+    max-width: var(--maxWidth);
+    height: 0.5px;
+    left: 1rem;
+    top: 5rem;
+}
+
 
 .home{
    position: relative;
@@ -106,7 +120,7 @@ section h1{
     max-width: var(--maxWidth);
     margin: 0 auto;
     height:580px ;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
 }
 
 .home div{
@@ -174,15 +188,16 @@ font-weight:500;
 position: absolute;
 top: 23rem;
 border: 1px solid rgb(255, 255, 255);
-width: 12%;
-height: 50px;
+width: 10%;
+height: 45px;
 display: flex;
 justify-content: center;
 align-items: center;
 left: 57.4rem;
-border-radius: 5px;
+border-radius: 10px;
 
 }
+
 
 .home ul li{
     position: absolute;
@@ -191,7 +206,7 @@ border-radius: 5px;
 
 .home ul li a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: white;
   }
 
@@ -224,20 +239,18 @@ border-radius: 5px;
 }
 .portfolio-section .propos-container{
     width: 100%;
-    height: 600px;
+    height: 650px;
     background-color: var(--bgc-principal);
-    border-radius:15px; 
-    --maxWidth: 1450px; 
+    border-radius:var(--border-radius); 
+    max-width: 1200px;
 }
 
 .grid{
    
  position:absolute; 
  width: 100%; 
- --maxWidth: 1450px; 
- height: 650px;
- top: -3rem;  
- border-radius:15px; 
+ left: -9rem;
+ top: 1rem;   
  display:grid;
  grid-template-columns:repeat(2,400px); 
  justify-content:center;
@@ -245,6 +258,31 @@ border-radius: 5px;
  column-gap: 70px;
 
 }
+
+.grid::after{
+   
+        content:"";
+        position:absolute; 
+        top: 4rem;
+        left: 17rem;
+        border-top: 1px solid rgb(255, 255, 255);
+        border-left: 1px solid rgb(255, 255, 255);
+        width: 20px;
+        height: 20px;   
+}
+    
+.grid::before{
+        content:"";
+        position:absolute; 
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        top: 34rem;
+        left: 72rem;
+        width: 20px;
+        height: 20px;
+}
+    
+    
 
 .paragraphe{
     
@@ -256,13 +294,170 @@ border-radius: 5px;
     font-weight: 200;
     padding-top: 1rem;
 }
+.skills-grid{
+    border:1px solid  red;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    width: 14%;
+    gap: 1rem;
+    
 
+}
 
 .skills .web{
     font-weight: 500;
     font-size: 1.5rem;
-    margin-top:1rem;  
+    margin-top:1rem; 
+   /* border: 1px solid black; */
+
+}
+.cv{
+position: absolute;
+top: 30rem;
+border: 1px solid rgb(255, 255, 255);
+width: 10%;
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+left: 18.4rem;
+border-radius: 10px;
+}
+
+.cv li{
+    list-style: none;
+}
+.cv li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+}
+
+
+.portfolio-section .contact-container{
+    width: 100%;
+    height: 700px;
+    background-color: var(--bgc-principal);
+    border-radius: var(--border-radius);
+
+}
+.contact-container h1{
+    position: absolute;
+    color:white; 
+    top: 2.1rem;
+}
+/*.contact-container h1::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    max-width: 1400px;
+    height: 0.5px;
+
+}
+*/
+
+.contact-mini{
+    position: absolute;
+    margin-top: 10rem;
+    right: 1.5rem;
+    width: 80%;
+    height: 480px;
+    border-radius: var(--border-radius);
+    background-color:rgba(0, 0, 0, 0.688);
+    padding: 2rem; 
+}
+
+.contact-mini p{
+  color:white;
+  width: 35%;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.contact-mini p::after{
+    content:"";
+    position:absolute; 
+    top: 1rem;
+    left: 1rem;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+    width: 15px;
+    height: 15px;   
+}
+  
+.contact-mini p::before{
+    content:"";
+    position:absolute; 
+    top: 12rem;
+    left: 23.5rem;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    width: 15px;
+    height: 15px;   
+}
+  
+
+
+
+
+form{
+    margin-left: 30rem;
+    margin-top: -10rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+form label{
+    color:white; 
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding-top: 0.7rem ;
+ }
+form input{
+   background: none;
+   border: none;
+   border-bottom: 1px solid white;
+   font-size: 1.5rem;
+   margin-top: 0.1rem;
+   padding-top: 0.7rem ;
+   color:white; 
+   padding-bottom: 1rem;
+}
+
+form button{
+    border:none; 
+    width:150px; 
+    height:37px;
+    font-size: 1rem; 
+    font-weight: 500;
+    margin-top:1rem; 
+    background-color:rgba(117, 117, 117, 0.752);
+    color:white;
+    border-radius: 8px;
 
 }
 
-.cv
+form input:focus{
+
+    outline: none;
+    background:none; /* Assure la suppression de l'effet par défaut */
+}
+.reseau{
+    /*border:1px solid green; */
+    width: 100%;
+    max-width: 510px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+  }
+  .reseau li{
+      list-style: none;
+  }
+  .reseau li a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 0.9rem;
+  }

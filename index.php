@@ -40,7 +40,7 @@
 <main>
 <section class="home">
     <div class="home-container">
-   <h1 class="titre-portfolio">PORTFOLIO<span class="copyright">&copy;</span></h1>
+   <h2 class="titre-portfolio">PORTFOLIO<span class="copyright">&copy;</span></h2>
     <p class="paragraphe1">
     <span class="salut">Salut__!</span>
     Je m’appelle Gaël Pembele, je suis un apprenti développeur, passionné par la technologie et le design, c'est pourquoi j'ai choisi de combiner ces deux univers ensemble.</p>
@@ -65,8 +65,9 @@
  <!--A propos-->
 
 <section  class="portfolio-section" >
-         <div class="propos-container">
+         
          <h1 id="projet-about">[À-propos]<span class="number">(02)</span></h1>  
+         <div class="propos-container">
              <article class="grid ">
              <p class="paragraphe">Étudiant en première année de développement web à Digital Campus Paris, je me considère comme un  futur creative developer, passionné par le front-end et le design.</p>
          
@@ -91,37 +92,39 @@
         </div>
              </div>
                <ul class="cv">
-                 <li><a href="efefef">.Voir mon CV</a></li>
+                 <li><a href="">.Voir mon CV</a></li>
                </ul>
              </article>
    </div>
 </section>
+ <!--Contact-->
 
 
-
-<section  class="portfolio-section  contact">
-<h1 id="contact-menu">[Conta-ct]<span class="number">(03)</span></h1> 
-<div class="contact-mini">
-<p>Pour toutes questions, avis, opportunités de stage ou d’alternance, n’hésitez pas à me contacter. Je suis ouverte aux échanges et prête à discuter avec vous.</p>
-<form action="" method="">
-    <label for="nom">Nom</label>
-    <input type="text" name="user_nom" id="nom" placeholder="Paul">
-    <label for="email">Email</label>
-    <input type="text" name="user_email" id="email" placeholder="exemple@gmail.com">
-    <button type="submit">Envoyez</button>
-</form>
-</div>
-    <ul class="reseau">
+<section  class="portfolio-section">
+    <div class="contact-container">  
+     <h1 id="contact-menu">[Conta-ct]<span class="number">(03)</span></h1> 
+      <div class="contact-mini">
+    <p>Pour toutes questions, avis, opportunités de stage ou d’alternance, n’hésitez pas à me contacter. Je suis ouverte aux échanges et prête à discuter avec vous.</p>
+      <form action="" method="">
+         <label for="nom">Nom</label>
+         <input type="text" name="user_nom" id="nom" placeholder="Paul">
+         <label for="email">Email</label>
+         <input type="text" name="user_email" id="email" placeholder="exemple@gmail.com">
+         <button type="submit">Envoyez</button>
+      </form>
+      <ul class="reseau">
         <li><a href="">pembelegael@gmail.com</a></li>
         <li><a href="">linkedin</a></li>
         <li><a href="">github</a></li>
         <li><a href="">instagram</a></li>
-    </ul>
+     </ul>
+    </div>
 </section>
 
 
 
-<section class="menu portfolio-section ">
+
+<section class="portfolio-section ">
 <h1 class="menu-titre">[Men-u]<span class="number">(04)</span></h1> 
 <div class="menu-block">
       <ul class="links-block">

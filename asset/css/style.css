@@ -144,21 +144,21 @@ section h1:before{
     max-width: var(--maxWidth);
     height:350px;
     margin: 0 auto ;
-    margin-top:-14rem; 
+    margin-top:-10rem; 
 }
 
 .home .titre-portfolio{
     position: absolute;
-    font-size: 14rem;
-    left: 1rem;
-     top: 10rem;
+    font-size: 15.4rem;
+    left: -2rem;
+    top: 30rem;
     color: #00000029;
     z-index: 1;
     border: none;
 } 
 
 .paragraphe1{
-    margin-top: 28rem;
+    margin-top: 24rem;
    /* border: 1px solid black;*/
     font-size: 4rem;
     width: 70%;
@@ -173,8 +173,8 @@ section h1:before{
     position:absolute; 
     top: 2rem;
     left: 6rem;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
     width: 20px;
     height: 20px;   
 }
@@ -183,8 +183,8 @@ section h1:before{
 .paragraphe1::before{
     content:"";
     position:absolute; 
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
     top: 30rem;
     left: 50rem;
     width: 20px;
@@ -202,8 +202,8 @@ font-weight:var(--font-weight);
 
 .home .link-contact{
 position: absolute;
-top: 25rem;
-border: 2px solid white;
+top: 30rem;
+border: 2px solid rgb(0, 0, 0);
 width: 15%;
 height: 55px;
 display: flex;
@@ -224,7 +224,7 @@ z-index: 3;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
-    color: white;
+    color: rgb(0, 0, 0);
 
   }
   .portfolio-section .projet-container{
@@ -243,15 +243,15 @@ z-index: 3;
     width: 600px;
     height: 500px;
     background-color: var(--bgc-mineur);
-    border-radius: var(--border-radius);
 
 }
 
 article .portfolio{
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: var(--color);
-    font-weight: 400;
+    color: rgba(0, 0, 0, 0.543);
+    font-weight: 800;
+    border:var(--border-radius)
 }
 
 
@@ -526,8 +526,7 @@ font-weight: var(--font-weight);
 
 
 .portfolio-section .menu-block{
-    background-color: var(--bgc-mineur);
-    border-radius:var(--border-radius);
+  
     height: 400px;
     max-width: 990px;
 }
@@ -545,8 +544,8 @@ font-weight: var(--font-weight);
     position:absolute; 
     content:"";
     height:0.4px; 
-    width: 500px;
-    background-color: white;
+    width: 1000px;
+    background-color: rgb(0, 0, 0);
     left:1rem; 
     margin-top: 3.5rem;
  }
@@ -555,14 +554,14 @@ font-weight: var(--font-weight);
     content:"";
     height:0.4px; 
     width: 500px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     left:1rem; 
     margin-top: 3.5rem;
  }
 
 .links-block li a{
     text-decoration: none;
-    color:white; 
+    color:rgb(5, 2, 2); 
     font-size: 3.6rem;
     font-weight: 500;
 }

@@ -43,9 +43,9 @@
    <h2 class="titre-portfolio">PORTFOLIO<span class="copyright">&copy;</span></h2>
     <p class="paragraphe1">
     <span class="salut">Salut__!</span>
-    Je m’appelle Gaël Pembele, je suis un apprenti développeur, passionné par la technologie et le design, c'est pourquoi j'ai choisi de combiner ces deux univers ensemble.</p>
+    Je m’appelle Gaël Pembele, je suis un apprenti développeur, passionné par la technologie et le design, c'est pourquoi j'ai choisi de combiner ces deux univers.</p>
     <ul class="link-contact">
-        <li><a href="">Contactez-moi</a></li>
+        <li><a href="#contact-menu">Contactez-moi</a></li>
     </ul>
     </div>
   </section>
@@ -87,18 +87,24 @@
              En dehors du code, je m’intéresse à la fashion photographie, et la street photographie. Ce portfolio met en avant mes réalisations.
              </p>
              <div class="paragraphe">         
-        <h2>Compétences</h2>
+        <h2 class ="competence">Compétences</h2>
         <div class="skills-grid">
-            <p class="skills"><span class="web">Web</span>
-              html/css
-              javascript
-              php
-              WordPress</p>
-              <p class="skills"><span class="web">Design</span>
-             illustrator 
-             photoshop
-             indesign
-             figma</p>
+            <div class="groupe">
+                 <h3 class="web">Web</h3>
+                  <p class="skills">
+                       html/css
+                       javascript
+                       php
+                       WordPress</p>
+             </div>
+              <div class="groupe">
+                 <h3 class="web">Design</h3>
+                    <p class="skills">
+                       illustrator 
+                       photoshop
+                       indesign
+                       figma</p>
+             </div>
         </div>
              </div>
                <ul class="cv">

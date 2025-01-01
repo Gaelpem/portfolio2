@@ -38,14 +38,15 @@
  <!-- Presentation-->
 
 <main>
+
 <section class="home">
     <div class="home-container">
-   <h2 class="titre-portfolio">PORTFOLIO&copy;</h2>
     <p class="paragraphe1" id="accueil-menu">
     <span class="salut">Salut,</span>
     Je m’appelle Gaël Pembele, je suis un apprenti développeur, passionné par la technologie et le design, c'est pourquoi j'ai choisi de combiner ces deux univers.</p>
     <ul class="link-contact">
         <li><a href="#contact-menu">Contactez-moi</a></li>
+        <h2 class="titre-portfolio">PORTFOLIO&copy;</span></h2>
     </ul>
     </div>
   </section>

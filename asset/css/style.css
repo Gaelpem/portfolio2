@@ -1,13 +1,12 @@
 
 :root{
    
-    --bgc-mineur:#0a0a0aaf; 
-    --maxWidth: 1450px; 
+    --bgc-mineur:#0a0a0ad0; 
+   /* --maxWidth: 1450px; */
     --border-radius: 15px;
     --fontSize:8rem; 
     --color:black;
     --font-weight:500; 
-    
 }
 
 *{
@@ -17,22 +16,21 @@
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth ;
 }
-
 body{
-height:100%; 
+    margin: 0;
+    line-height: inherit;
 }
-
-
 
 header{
     position: relative;
-    background-color: rgba(223, 78, 78, 0.873);
     padding: 0 3rem;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
+    border:1px solid red;
+    width: 100%;
 }
 
 .navbar{
@@ -44,7 +42,7 @@ header{
     max-width: 1450px;
     height: 80px;
     top: 0;
-    position: fixed;
+   
     z-index: 10;
 }
 
@@ -126,34 +124,36 @@ section h1:before{
     left: 0.5rem;
 
 }
-
+.main, .home, .portfolio-section {
+    max-width: none; /* ou retirez cette propriété si vous ne voulez pas de contrainte de largeur */
+    width: 100%; /* Assurez-vous que ces éléments prennent toute la largeur */
+}
 .home{
-   position: relative;
    /*background-color: var(--bgc-mineur);*/
     width: 100%;
-    max-width: var(--maxWidth);
     margin: 0 auto;
     height:580px ;
     border-radius: var(--border-radius);
 }
 
-.home div{
+.home .home-container{
     /*background-color: rgb(0, 0, 255);*/
     width: 100%;
-    max-width: var(--maxWidth);
     height:350px;
     margin: 0 auto ;
     margin-top:-10rem; 
 }
 
 .home .titre-portfolio{
-    position: absolute;
+    text-align: center;
     font-size: 15.4rem;
-    left: -2rem;
-    top: 34.5rem;
+    position: relative;
+    top: 20rem;
     color: #00000029;
-    z-index: 1;
+    z-index: 1; 
     border: none;
+    border: 1px solid  black;
+    width: 100%;
 } 
 
 .paragraphe1{
@@ -193,9 +193,7 @@ section h1:before{
 
 
 .paragraphe1 .salut{
-position: absolute;
 font-size: 9rem;
-top: 0.3rem;
 font-weight:var(--font-weight);
 }
 
@@ -403,10 +401,11 @@ border-radius: 10px;
 
 }
 .contact-container h2{
-    position: relative; 
     color:rgb(255, 255, 255); 
     margin-top: 2.1rem;
+    margin-left: 20rem;
     font-size:  var(--fontSize);
+    position: relative;
 }
 
 .contact-container h2::after{
@@ -440,29 +439,6 @@ border-radius: 10px;
   margin-left: -3rem;
   border-top: 0.5px solid white;
   padding-top:1rem;  
-  z-index: 10;
-}
-.contact-mini p::after{
-    content:"";
-    position:absolute; 
-    top: 1rem;
-    left: -2rem;
-    border-top: 1px solid rgb(255, 255, 255);
-    border-left: 1px solid rgb(255, 255, 255);
-    width: 15px;
-    height: 15px;
-   
-}
-  
-.contact-mini p::before{
-    content:"";
-    position:absolute; 
-    top: 14rem;
-    left: 24rem;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    border-right: 1px solid rgb(255, 255, 255);
-    width: 15px;
-    height: 15px;   
 }
   
 form{
@@ -517,11 +493,9 @@ font-weight: var(--font-weight);
     /*border:1px solid green; */
     margin-left: -3.5rem;
     width: 100%;
-    max-width: 510px;
-    height: 50px;
+    max-width: 500px;
     display: flex;
     justify-content: space-between;
-    z-index: 10;
   }
   .reseau li{
       list-style: none;
@@ -535,7 +509,6 @@ font-weight: var(--font-weight);
 
 
 .portfolio-section .menu-block{
-  
     height: 400px;
     max-width: 990px;
 }
@@ -592,8 +565,8 @@ footer{
      border-radius: var(--border-radius);
      display: flex;
      align-items: center;
-    color: white;
-    margin-bottom: 1.3rem;
+     color: white;
+     margin-bottom: 1.3rem;
 }
 
 footer .social-lieu-copyright{
@@ -624,7 +597,6 @@ footer .social-lieu-copyright{
     font-weight: 500;
 }
 .logo-blanc{
-    position: absolute;
     width: 8%;
     left: 53rem;
     /*border: 1px solid black;*/

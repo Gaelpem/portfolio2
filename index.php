@@ -40,9 +40,9 @@
 <main>
 <section class="home">
     <div class="home-container">
-   <h2 class="titre-portfolio">PORTFOLIO<span class="copyright">&copy;</span></h2>
-    <p class="paragraphe1">
-    <span class="salut">Salut__!</span>
+   <h2 class="titre-portfolio">PORTFOLIO&copy;</h2>
+    <p class="paragraphe1" id="accueil-menu">
+    <span class="salut">Salut,</span>
     Je m’appelle Gaël Pembele, je suis un apprenti développeur, passionné par la technologie et le design, c'est pourquoi j'ai choisi de combiner ces deux univers.</p>
     <ul class="link-contact">
         <li><a href="#contact-menu">Contactez-moi</a></li>
@@ -122,7 +122,7 @@
 <h1 class="menu-titre">[Men-u]<span class="number">(04)</span></h1> 
 <div class="menu-block">
       <ul class="links-block">
-                    <li><a href="#projet-menu">[Accue-il]<span class="numero">(01)</span></a></li>
+                    <li><a href="#accueil-menu">[Accue-il]<span class="numero">(01)</span></a></li>
                     <li><a href="#projet-menu">[Proje-ts]<span class="numero">(02)</span></a></li>
                     <li><a href="#projet-about">[À-propos]<span class="numero">(03)</span></a></li>
                     <li><a href="#contact-menu">[Conta-ct]<span class="numero">(04)</span></a></li>

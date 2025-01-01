@@ -40,11 +40,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   /* background-color: rgba(255, 255, 0, 0.708);*/
+    border: 1px solid yellow;
     max-width: 1450px;
-    height: 60px;
+    height: 80px;
+    top: 0;
     position: fixed;
-    margin-top: 1.5rem;
+    z-index: 10;
 }
 
 .navbar li {
@@ -83,10 +84,8 @@ header{
 }
 
 .navbar .logo{
-position: absolute;
+border:1px solid black;
  width: 5%;
- top: 1rem;
-left: 43rem;
 }
 .navbar .logo img{
     width: 100%;
@@ -151,14 +150,14 @@ section h1:before{
     position: absolute;
     font-size: 15.4rem;
     left: -2rem;
-    top: 30rem;
+    top: 34.5rem;
     color: #00000029;
     z-index: 1;
     border: none;
 } 
 
 .paragraphe1{
-    margin-top: 24rem;
+    margin-top: 19.5rem;
    /* border: 1px solid black;*/
     font-size: 4rem;
     width: 70%;
@@ -171,7 +170,7 @@ section h1:before{
 .paragraphe1::after{
     content:"";
     position:absolute; 
-    top: 2rem;
+    top: 1rem;
     left: 6rem;
     border-top: 1px solid rgb(0, 0, 0);
     border-left: 1px solid rgb(0, 0, 0);
@@ -186,30 +185,30 @@ section h1:before{
     border-bottom: 1px solid rgb(0, 0, 0);
     border-right: 1px solid rgb(0, 0, 0);
     top: 30rem;
-    left: 50rem;
+    left: 69rem;
     width: 20px;
     height: 20px;
 }
 
 
 
-.paragraphe1 span{
+.paragraphe1 .salut{
 position: absolute;
 font-size: 9rem;
-top: 2rem;
+top: 0.3rem;
 font-weight:var(--font-weight);
 }
 
 .home .link-contact{
 position: absolute;
-top: 30rem;
-border: 2px solid rgb(0, 0, 0);
-width: 15%;
-height: 55px;
+top: 29rem;
+background-color: black;
+width: 12%;
+height: 50px;
 display: flex;
 justify-content: center;
 align-items: center;
-left: 56rem;
+left: 54rem;
 border-radius: 15px;
 z-index: 3;
 }
@@ -222,9 +221,9 @@ z-index: 3;
 
 .home ul li a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 
   }
   .portfolio-section .projet-container{
@@ -384,20 +383,29 @@ border-radius: 10px;
     font-size: 1.1rem;
     color: white;
 }
+.portfolio-section .contact{
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center; /* Centre horizontalement la section */
+    align-items: center; /* Centre verticalement */
+}
 
 
-.portfolio-section .contact-container{
-    width: 100%;
+.contact-container{
+    width: 90%;
     height: 700px;
     /*background-color: var(--bgc-principal);*/
     border-radius: var(--border-radius);
     background-color:var(--bgc-mineur);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 .contact-container h2{
-    position: absolute;
+    position: relative; 
     color:rgb(255, 255, 255); 
-    top: 2.1rem;
+    margin-top: 2.1rem;
     font-size:  var(--fontSize);
 }
 
@@ -413,13 +421,14 @@ border-radius: 10px;
 
 
 .contact-mini{
-    position: absolute;
-    margin-top: 12rem;
-    right: 1.5rem;
-    width: 80%;
-    height: 480px;
-    border-radius: var(--border-radius);
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    width: 100%;
     padding: 2rem; 
+    gap: 2rem;
 }
 
 .contact-mini p{

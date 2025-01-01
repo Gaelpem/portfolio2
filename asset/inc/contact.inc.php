@@ -1,8 +1,8 @@
-<section  class="portfolio-section">
+<section  class="portfolio-section contact">
     <div class="contact-container">  
      <h2 id="contact-menu">[Conta-ct]<span class="number">(03)</span></h2> 
       <div class="contact-mini">
-    <p>Pour toutes questions, avis, opportunités de stage ou d’alternance, n’hésitez pas à me contacter. Je suis ouverte aux échanges et prête à discuter avec vous.</p>
+    <p>Pour toutes questions, avis, opportunités de stage ou d’alternance, n’hésitez pas à me contacter. Je suis ouvert aux échanges et prêt à discuter avec vous.</p>
       <form action="" method="">
          <label for="nom">Nom</label>
          <input type="text" name="user_nom" id="nom" placeholder="Paul">

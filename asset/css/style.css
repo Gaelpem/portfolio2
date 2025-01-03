@@ -46,25 +46,25 @@ header{
     z-index: 10;
 }
 
-.navbar li {
+ li {
    list-style: none;
 }
 
 
-.navbar a{
+ a{
     text-decoration: none;
     color:black;   
     font-size: 1.8rem;
     position: relative;
 }
 
-.navbar .nav-links{
+.nav-links{
     display: flex;
     gap: 1rem;
     
 }
 
-.nav-links a::after{
+ a::after{
     content: "";
     position: absolute;
     width: 0;
@@ -91,8 +91,9 @@ header{
 
 
 .navbar .burger-menu-button{
-    display: none;
     font-size:1.7rem; 
+    display: none;
+    cursor: pointer;
 }
 main{
 
@@ -190,6 +191,7 @@ font-weight:var(--font-weight);
 
 
 .paragraphe1::before{
+
     content:"";
     position:absolute; 
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -198,6 +200,7 @@ font-weight:var(--font-weight);
     right: 0;
     width: 20px;
     height: 20px;
+
 }
 
 .home .link-contact{
@@ -226,9 +229,6 @@ border-radius: 10px;
     color: rgb(0, 0, 0);
 
   }
-
-
-
 
   .portfolio-section .projet-container{
    display: flex;
@@ -618,14 +618,16 @@ footer .social-lieu-copyright{
 
 
 /*------------- RESPONSIVE --------------*/
-
-@media (max-width:990px){
-      .navbar .links, 
-      .navbar .nav-links{
-       display: none;
- 
-      }
-      
+@media  (max-width:980px){
+   
+    .navbar .link-home,
+    .navbar .nav-links{
+        display: none;
+    }
+    
+    .navbar .burger-menu-button{
+        display: block;
+    }
 
 
 }

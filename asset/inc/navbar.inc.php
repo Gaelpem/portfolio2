@@ -17,5 +17,8 @@
             <li><a href="#projet-about" aria-label="À propos de moi">/ À propos</a></li>
             <li><a href="#contact-menu" aria-label="Contactez-moi">/ Contact</a></li>
         </ul>
+        <div class="burger-menu-button">
+    <p class="menu-bars">Menu</p>
+    </div>
     </nav>
 </header>

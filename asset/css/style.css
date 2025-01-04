@@ -17,6 +17,7 @@
     scroll-behavior: smooth ;
 }
 body{
+
     margin: 0;
     line-height: inherit;
 }
@@ -42,7 +43,6 @@ header{
     max-width: 1450px;
     height: 80px;
     top: 0;
-   
     z-index: 10;
 }
 
@@ -79,7 +79,7 @@ header{
 }
 .nav-links a:hover{
     transition: translateX(10px); 
-    transition: transk 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .navbar .logo{
@@ -605,7 +605,7 @@ footer .social-lieu-copyright{
 }
 
 
-/*.portfolio-photo{
+.portfolio-photo{
    text-align:center;
 }
 
@@ -614,7 +614,26 @@ footer .social-lieu-copyright{
  font-size: 13rem;
 }
 
-*/
+
+/*---- BURGER-MENU---- */
+.burger-menu{
+    position:absolute; 
+    /* display: none;  */
+    top: -0.9rem;
+    width: 300px; 
+    z-index: 3;
+}
+
+.burger-menu .nav-links{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.burger-menu .nav-links li a{
+   font-size: 4rem;
+  }
+
 
 
 /*------------- RESPONSIVE --------------*/
@@ -627,7 +646,18 @@ footer .social-lieu-copyright{
     
     .navbar .burger-menu-button{
         display: block;
+        z-index: 20;
     }
+
+    .burger-menu {
+       background-color: rgb(145, 145, 145);
+        display: flex;
+        align-items: center;
+        margin: 0 auto ;
+        width: 100%;
+        height: 100vh;
+    }
+
 
 
 }

@@ -23,13 +23,13 @@
     </nav>
 
     <div class="burger-menu">
-    <ul class="nav-links">
     <ul class="nav-links link-home">
             <li><a href="#accueil-menu" aria-label="Retour à l'accueil">Accueil</a></li>
-        </ul>
             <li><a href="#projet-menu" aria-label="Voir mes projets">Projets</a></li>
-            <li><a href="#projet-about" aria-label="À propos de moi">/ À propos</a></li>
-            <li><a href="#contact-menu" aria-label="Contactez-moi">/ Contact</a></li>
+            <li><a href="#projet-about" aria-label="À propos de moi">À propos</a></li>
+            <li><a href="#contact-menu" aria-label="Contactez-moi"> Contact</a></li>
         </ul>
+
+        
     </div>
 </header>

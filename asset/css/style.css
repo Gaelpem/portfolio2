@@ -798,6 +798,17 @@ footer .social-lieu-copyright{
         font-size:1rem; 
      }
       
+     .contact-container{
+        display: block;
+     }
+
+     .contact-container .contact-mini form{
+        margin-left: 10rem; 
+     }
+
+
+
+
      .contact-container h2{
         font-size: 4rem;
         margin-left: 0;

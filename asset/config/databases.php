@@ -6,4 +6,11 @@
                 const DB_PASS = "root"; 
 
 
+    try{
+        $pdo = new PDO('mysql:host=localhost;dbname=')
+    }
+
+
+
+
 ?>

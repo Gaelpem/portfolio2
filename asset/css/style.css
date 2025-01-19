@@ -172,30 +172,28 @@ section h1:before{
     padding: 0 2rem;
 }
 
-/*.paragraphe1::after{
-    content:"";
-    position:absolute; 
-    top: 0rem;
-    left: 0rem;
-    border-top: 1px solid rgb(0, 0, 0);
-    border-left: 1px solid rgb(0, 0, 0);
-    width: 20px;
-    height: 20px;   
+.paragraphe1::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+    width: 60px;
+      /* Utiliser height: 0 pour une ligne purement horizontale */
+    left: 64.6rem;
+    top: 11.7rem;
 }
 
-
-.paragraphe1::before{
-
-    content:"";
-    position:absolute; 
-    border-bottom: 1px solid rgb(0, 0, 0);
-    border-right: 1px solid rgb(0, 0, 0);
-    bottom: 0rem;
-    right: 0;
-    width: 20px;
-    height: 20px;
-
-}*/
+.paragraphe1::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 50px;
+    height: 50px;
+    left: 65rem;
+    top: 10.05rem;
+    transform: rotate(-50deg);
+    box-sizing: border-box; /* Assure que les bordures ne dépassent pas la taille définie */
+}
 
 .home .link-contact{
 position: absolute;
@@ -616,34 +614,33 @@ footer .social-lieu-copyright .social{
 
 /*----BURGER-MENU---- */
 .burger-menu{
-    position:absolute; 
+    display: none;
     height: 0;
-    display: none;  
-    top: -10rem;
-    width: 300px; 
-    z-index: 3;
+    position:absolute; 
+    top: 0;
+    width: 100%; 
+    background-color:rgb(205, 205, 205);
+    transition: height 0.3s ease;
+}
+.burger-menu.open{
+    height: 370px;
 }
 
 .burger-menu .nav-links{
-    border-left:0.5px solid black;
     display: flex;
     flex-direction: column;
-    margin-left: 2.5rem;
-    padding-left: 1rem;
+    margin-left: 3rem;
+    margin-top: 7rem;
+    border-left: 1px solid grey;
+    padding-left: 0.5rem;
+
 }
 
+.burger-menu .indicateur{
+    margin-top: 2.6rem;
+    margin-left: 3rem;
+}
 
-.burger-menu .nav-links li a{
-   font-size: 4rem;
-  }
-  .burger-menu .indicateur{
-    position: absolute;
-    left: 1rem;
-    bottom: 2rem;
-    font-size: 2rem;
-    color: rgba(0, 0, 0, 0.389);
-
-  }
 
 
 /*------------- RESPONSIVE --------------*/
@@ -659,14 +656,12 @@ footer .social-lieu-copyright .social{
         z-index: 20;
     }
 
-    .burger-menu {
-       background-color: rgb(214, 214, 214);
-        display: flex;
-        align-items: center;
-        margin: 0 auto ;
-        width: 100%;
-        height: 100vh;
+    .burger-menu.open{
+        display: block;
     }
+
+   
+  
 
 
 }

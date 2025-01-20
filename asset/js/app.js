@@ -16,3 +16,10 @@ burgerMenuButton.addEventListener('click', ()=>{
     }
 })
 
+
+const accueil = document.getElementById('accueil'); 
+accueil.addEventListener('click', ()=>{
+     
+    burgerMenu.style.display = "none"; 
+
+})

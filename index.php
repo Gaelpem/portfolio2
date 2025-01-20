@@ -27,9 +27,12 @@
     Je m’appelle Gaël Pembele, je suis un apprenti développeur, passionné par la technologie et le design, c'est pourquoi j'ai choisi de combiner ces deux univers.</p>
     <ul class="link-contact">
         <li><a href="#contact-menu">Contactez-moi</a></li>
+        <div class="titre-portfolio1">
+    <h2 class="titre-portfolio">PORTFOLIO&copy;</span></h2>
+    </div>
     </ul>
     </div> 
-    <h2 class="titre-portfolio">PORTFOLIO&copy;</span></h2>
+   
   </section>
 
 

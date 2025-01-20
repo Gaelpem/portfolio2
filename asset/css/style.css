@@ -141,19 +141,30 @@ section h1:before{
     height:580px ;
     display: flex;
    flex-direction: column;
-  /* border:1px solid rgb(226, 0, 0);*/
+  /*border:1px solid rgb(226, 0, 0);*/
 }
 
 .home .home-container{
     height:350px;
     width: 100%; /* Limite la largeur */
     display: flex;
-    align-items: center;
-    /*border: 1px solid yellow;*/
+    flex-direction: column;
+   /*border: 1px solid yellow;*/
+}
+.paragraphe1{
+    font-size: 3.4rem;
+    color:rgb(4, 4, 4); 
+    /*border: 1px solid black;*/        
+    z-index: 4;
+    font-weight: 200;
+    position:relative; 
+    width: 70%;
+}
+.home .home-container .titre-portfolio1 {
+    width: 100%;
 }
 
-
-.home .titre-portfolio{
+.home .home-container .titre-portfolio1 .titre-portfolio{
     margin-top: 8rem;
     text-align: center;
     font-size: 15vw;
@@ -162,51 +173,23 @@ section h1:before{
   /* border: 1px solid  black;   /* Centre horizontalement dans son conteneur parent */  
 } 
 
-.paragraphe1{
-    font-size:3.7rem;
-    color:rgb(4, 4, 4); 
-    /*border: 1px solid black;*/
-    z-index: 4;
-    font-weight: 200;
-    position:relative; 
-    padding: 0 2rem;
-}
-
-.paragraphe1::after {
-    content: "";
-    position: absolute;
-    border-top: 1px solid black;
-    width: 60px;
-      /* Utiliser height: 0 pour une ligne purement horizontale */
-    left: 64.6rem;
-    top: 11.7rem;
-}
-
-.paragraphe1::before {
-    content: "";
-    position: absolute;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    width: 50px;
-    height: 50px;
-    left: 65rem;
-    top: 10.05rem;
-    transform: rotate(-50deg);
-    box-sizing: border-box; /* Assure que les bordures ne dépassent pas la taille définie */
-}
-
 .home .link-contact{
-position: absolute;
-left: 4rem;
-top: 27rem;
-width: 15%;
-display: inline-flex;
-border: 1px solid rgb(0, 0, 0); 
-padding:1.2rem;
-display: flex;
+  margin-top: 1rem;
+}
+
+
+.home .link-contact li{
+ border: 1px solid black;
+ display: flex;
 justify-content: center;
 align-items: center;
-border-radius: 8px;
+ border-radius:8px;
+ width: 300px;
+ height: 80px;
+}
+.home .link-contact li a{
+    color :rgb(0, 0, 0); 
+    font-size: 2rem;
 }
 
 
@@ -618,26 +601,28 @@ footer .social-lieu-copyright .social{
     height: 0;
     position:absolute; 
     top: 0;
-    width: 100%; 
+    width: 100vw; 
     background-color:rgb(205, 205, 205);
-    transition: height 0.3s ease;
+    transition: height 0.7s ease;
 }
 .burger-menu.open{
-    height: 370px;
+    height: 100vh; 
 }
 
 .burger-menu .nav-links{
     display: flex;
     flex-direction: column;
     margin-left: 3rem;
-    margin-top: 7rem;
-    border-left: 1px solid grey;
+    margin-top: 50%;
+    border-left: 1px solid rgb(171, 171, 171);
     padding-left: 0.5rem;
 
 }
-
+.burger-menu .nav-links a{
+   font-size: 3rem;
+}
 .burger-menu .indicateur{
-    margin-top: 2.6rem;
+    margin-top: 12rem;
     margin-left: 3rem;
 }
 
@@ -661,9 +646,6 @@ footer .social-lieu-copyright .social{
     }
 
    
-  
-
-
 }
 /*---Responsive section h1 ----*/
 
@@ -681,78 +663,76 @@ footer .social-lieu-copyright .social{
 
 
      .portfolio-section .projet-container{
-        
         display: flex;
         flex-direction: column;
 
      }
 }
 
+/*--- paragraphe1 et titre ----*/
 
 @media (max-width: 768px) {
     .home {
-        margin-top:50rem;
-        height: auto; /* Ajuste la hauteur automatiquement */
-        padding: 2rem;
+ 
     }
 
     .home .home-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 1rem;
+     
+
+
+
     }
 
-    .home-container .salut {
-        font-size: 5rem; /* Réduit la taille de la police */
-    }
 
     .home .titre-portfolio {
-        font-size: vw; /* Réduit la taille */
-        margin-top: 4rem;
+       /* Réduit la taille */
+       display: none;
     }
 
     .paragraphe1 {
-        margin-left: 0;
-        margin-top: 1rem;
-        font-size: 2rem; /* Réduit la taille de la police */
-        width: 100%; /* S'étend sur toute la largeur */
+       /* S'étend sur toute la largeur */
+      font-size: 3rem;
     }
 
     .home .link-contact {
-        margin-top: 2rem;
-        margin-left: 0;
-        width: auto; /* S'adapte automatiquement */
-        padding: 0.8rem;
+        margin-top: 16rem;
+        margin-left: -0.2rem;
+        width: 300px;
     }
 }
 
 /* @media query pour mobiles */
-@media (max-width: 480px) {
-    .home-container .salut {
-        font-size: 4rem; /* Plus petit pour mobile */
-    }
-
-    .home .titre-portfolio {
-        font-size: 7vw; /* Taille encore plus réduite */
-        margin-top: 2rem;
-    }
-
+@media screen and (max-width: 1200px) {
     .paragraphe1 {
-        font-size: 1.6rem; /* Plus petit */
-        padding: 0;
-        width: 100%;
-        text-align: justify; /* Justifie le texte pour améliorer la lisibilité */
+      font-size: 2.5rem;
+      padding: 1.8rem;
     }
-
-    .home .link-contact {
-        width: 70%;
-        padding: 1.5rem 0;
-        justify-content: center;
-        margin: 1rem 0;
-        border-radius: 5px;
-
+  }
+  @media screen and (max-width: 1024px) {
+    .paragraphe1 {
+      font-size: 2rem;
+      padding: 1.5rem;
     }
-}
+  }
+  @media screen and (max-width: 768px) {
+    .paragraphe1{
+      font-size: 1.5rem;
+      padding: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .paragraphe1 {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .paragraphe1 {
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  }
+  
 
 
 
@@ -839,6 +819,22 @@ footer .social-lieu-copyright .social{
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
 @media (max-width: 768px) {
     footer {
@@ -870,6 +866,17 @@ footer .social-lieu-copyright .social{
         font-size: 1rem; /* Réduit légèrement la taille de la police */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 480px) {
     footer {
